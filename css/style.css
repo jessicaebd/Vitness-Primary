@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&display=swap');
 
 :root {
-	--color: black;
+	--black: rgb(0, 0, 0);
+	--red: rgb(196, 0, 0);
+	--grey: rgb(71, 63, 63);
 }
 
 * {
