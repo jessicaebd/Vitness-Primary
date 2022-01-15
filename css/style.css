@@ -119,3 +119,83 @@ body {
 	color: black;
 	background-color: rgb(240, 240, 240);
 }
+
+/* Join */
+.register {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	/* width: 100%; */
+	height: 100vh;
+	padding: 0 10rem;
+	background: url('../assets/join.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.card {
+	padding: 2em 2em;
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 2px 2px 5px rgb(16, 16, 16);
+	color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-title {
+	font-size: 1.5em;
+	margin-bottom: 1.5rem;
+	font-weight: bold;
+}
+
+.input-container {
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+select {
+	width: 100%;
+	padding: 10px;
+	font-size: 1em;
+	border: 1px solid rgb(197, 197, 197);
+	border-radius: 5px;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+}
+
+.btn-register {
+	padding: 10px 40px;
+	font-size: 1em;
+	border-radius: 5px;
+	color: black;
+	background-color: white
+	transition: 0.15s ease-in-out;
+}
+
+.btn-register:hover {
+	border-radius: 7px;
+	background-color: black;
+}
+
+form a {
+	font-size: 0.8em;
+	color: black;
+}
