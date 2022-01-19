@@ -1,5 +1,4 @@
 let form = document.getElementById('joinForm');
-
 form.onsubmit = function (e) {
 	e.preventDefault();
 

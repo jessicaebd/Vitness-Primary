@@ -17,8 +17,10 @@
 
 body {
 	font-size: 16px;
+	min-height: 2000px;
 }
 
+/* Navbar */
 .navbar {
 	display: flex;
 	position: fixed;
@@ -27,13 +29,13 @@ body {
 	color: var(--white);
 	background-color: var(--black);
 	box-shadow: 1px 1px 5px rgb(204, 204, 204);
+	padding: 0 3em;
 }
 
 .navbar-logo {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	padding: 0 2rem;
 }
 
 .navbar-logo a {
@@ -51,15 +53,14 @@ body {
 
 .navbar-menu-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex-grow: 1;
 	height: 100%;
-	padding: 0 2rem;
 }
 
 .navbar-menu {
 	display: flex;
-	font-size: 1em;
+	margin-right: 2em;
 }
 
 .navbar-menu a {
@@ -76,23 +77,22 @@ body {
 	align-items: center;
 	height: 100%;
 	padding: 0 1rem;
-	transition: 0.13s ease-in-out;
+	transition: 0.15s ease-in-out;
 }
 
 .navbar-item a:hover {
-	border-top: 4px solid var(--red);
+	border-top: 3px solid var(--red);
 	color: var(--white);
 }
 
 .active {
 	color: var(--white) !important;
-	border-top: 4px solid var(--red);
+	border-top: 3px solid var(--red);
 }
 
 .navbar-btn {
 	display: flex;
 	align-items: center;
-	padding: 0 1rem;
 }
 
 .dropdown:hover .dropdown-container {
@@ -100,7 +100,7 @@ body {
 }
 
 .dropdown:hover .navbar-item a {
-	border-top: 4px solid var(--red);
+	border-top: 3px solid var(--red);
 	color: var(--white);
 }
 
@@ -121,6 +121,45 @@ body {
 
 .dropdown-item a:hover {
 	color: var(--white);
+}
+
+/* Mini Navbar */
+#miniNavbar {
+	display: none;
+	padding-top: 70px;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--black);
+	transition: width 0.13s ease-in-out;
+}
+
+.mini-navbar-item {
+	padding: 2em 3em;
+}
+
+.mini-navbar-item a {
+	text-decoration: none;
+	border: none;
+	font-size: 1.5em;
+}
+.mini-navbar-item a:hover {
+	border-top: 3px solid var(--red);
+}
+
+/* Hamburger */
+#hamburger {
+	display: none;
+	position: absolute;
+	width: 25px;
+	top: 2em;
+	right: 2em;
+}
+
+#hamburger span {
+	width: 100%;
+	margin: 2px 0;
+	border: 1px solid var(--white);
+	background-color: var(--white);
 }
 
 /* Join */
@@ -226,7 +265,51 @@ form a:hover {
 @media screen and (max-width: 700px) {
 	body {
 		font-size: 13px;
+		position: relative;
 	}
+
+	/* Navbar */
+	.navbar {
+		justify-content: center;
+		box-shadow: none;
+	}
+
+	.navbar-logo p {
+		display: none;
+	}
+
+	.navbar-logo img {
+		margin: 0;
+	}
+
+	.navbar-menu-container {
+		display: none;
+	}
+
+	#hamburger {
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+	/* .navbar-menu-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.navbar-menu {
+		flex-direction: column;
+		background-color: aqua;
+	}
+
+	.navbar-item {
+		padding: 1em 0;
+	}
+
+	.navbar-item a {
+		border: none;
+		font-size: 1.5em;
+	} */
+
 	.blur {
 		justify-content: center;
 		padding: 0 1rem;
