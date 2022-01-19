@@ -19,26 +19,33 @@ form.onsubmit = function (e) {
 	// Validation
 	// Name
 	if (name.length < 3) {
-		nameError.innerHTML = 'Must be at least 3 characters long';
+		nameError.innerHTML = 'Must be at least 3 characters long.';
 	} else {
 		nameError.innerHTML = '';
 	}
 
 	// Age
 	if (age < 17) {
-		ageError.innerHTML = 'Must be at least 17 years old';
+		ageError.innerHTML = 'Must be at least 17 years old.';
 	} else {
 		ageError.innerHTML = '';
 	}
 
 	// Tel
-	if (!telephone.startsWith(+62)) {
-		telephoneError.innerHTML = 'Must start with +62';
+	if (!telephone.startsWith('+81')) {
+		telephoneError.innerHTML = 'Must start with +81';
 	} else if (telephone.length != 14) {
-		telephoneError.innerHTML = 'Length is incorrect';
+		telephoneError.innerHTML = 'Should be 11 digits long';
 	} else {
 		telephoneError.innerHTML = '';
 	}
 
 	// Email
+	if (!email.endsWith('.com')) {
+		emailError.innerHTML = 'Must end with .com';
+	} else if (!email.includes('@')) {
+		emailError.innerHTML = 'Must contain @';
+	} else {
+		emailError.innerHTML = '';
+	}
 };

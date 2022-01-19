@@ -2,8 +2,10 @@
 
 :root {
 	--black: rgb(0, 0, 0);
-	--red: rgb(196, 0, 0);
+	--red: rgb(226, 0, 0);
 	--grey: rgb(71, 63, 63);
+	--white: rgb(255, 255, 255);
+	--unwhite: rgb(201, 201, 201);
 }
 
 * {
@@ -14,15 +16,16 @@
 }
 
 body {
-	font-size: 17px;
+	font-size: 16px;
 }
 
 .navbar {
 	display: flex;
 	position: fixed;
 	width: 100%;
-	height: 70px;
-	background-color: white;
+	height: 60px;
+	color: var(--white);
+	background-color: var(--black);
 	box-shadow: 1px 1px 5px rgb(204, 204, 204);
 }
 
@@ -30,20 +33,20 @@ body {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	padding: 0 1rem;
+	padding: 0 2rem;
 }
 
 .navbar-logo a {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	color: black;
-	font-size: 0.6em;
+	color: var(--white);
+	font-size: 1.3em;
 }
 
 .navbar-logo img {
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	margin-right: 0.5rem;
 }
 
 .navbar-menu-container {
@@ -51,17 +54,16 @@ body {
 	justify-content: space-between;
 	flex-grow: 1;
 	height: 100%;
-	/* background-color: aqua; */
+	padding: 0 2rem;
 }
 
 .navbar-menu {
 	display: flex;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 .navbar-menu a {
-	color: rgb(100, 100, 100);
-	font-weight: bold;
+	color: var(--unwhite);
 	text-decoration: none;
 }
 
@@ -78,12 +80,13 @@ body {
 }
 
 .navbar-item a:hover {
-	border-top: 4px solid black;
+	border-top: 4px solid var(--red);
+	color: var(--white);
 }
 
 .active {
-	color: black !important;
-	border-top: 4px solid black;
+	color: var(--white) !important;
+	border-top: 4px solid var(--red);
 }
 
 .navbar-btn {
@@ -97,15 +100,16 @@ body {
 }
 
 .dropdown:hover .navbar-item a {
-	border-top: 4px solid black;
+	border-top: 4px solid var(--red);
+	color: var(--white);
 }
 
 .dropdown-container {
 	display: none;
 	position: absolute;
 	border-radius: 0.5rem;
-	background-color: white;
-	box-shadow: 0 1px 5px rgb(220, 220, 220);
+	background-color: var(--black);
+	box-shadow: 0 1px 5px var(--grey);
 	transition: 0.13s ease-in-out;
 }
 
@@ -116,28 +120,35 @@ body {
 }
 
 .dropdown-item a:hover {
-	color: black;
-	background-color: rgb(240, 240, 240);
+	color: var(--white);
 }
 
 /* Join */
 .register {
-	display: flex;
-	/* justify-content: center; */
-	align-items: center;
-	/* width: 100%; */
+	width: 100%;
 	height: 100vh;
-	padding: 0 10rem;
 	background: url('../assets/join.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
+.blur {
+	background: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(3px);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+}
+
 .card {
+	margin-left: 10rem;
 	padding: 2em 2em;
-	background-color: rgba(0, 0, 0, 0.8);
-	box-shadow: 2px 2px 5px rgb(16, 16, 16);
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 2px 2px 5px var(--grey);
 	color: white;
+	border-radius: 5px;
 }
 
 form {
@@ -154,14 +165,10 @@ form {
 
 .input-container {
 	width: 100%;
-	margin-bottom: 8px;
-}
-
-.checkbox-container {
-	display: flex;
-	align-items: center;
 	margin-bottom: 10px;
-	font-size: 0.9em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 input[type='text'],
@@ -179,23 +186,34 @@ select {
 .btn {
 	border: none;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .btn-register {
-	padding: 10px 40px;
+	padding: 10px 25px;
 	font-size: 1em;
 	border-radius: 5px;
-	color: black;
-	background-color: white
+	color: var(--white);
+	background-color: var(--red);
 	transition: 0.15s ease-in-out;
 }
 
 .btn-register:hover {
 	border-radius: 7px;
-	background-color: black;
+	background-color: rgb(179, 0, 0);
 }
 
 form a {
 	font-size: 0.8em;
-	color: black;
+	color: var(--unwhite);
+}
+
+form a:hover {
+	color: var(--white);
+}
+
+.errorLabel {
+	color: rgb(255, 49, 49);
+	font-size: 0.8em;
+	margin-top: 2px;
 }
