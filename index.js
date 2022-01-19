@@ -12,15 +12,33 @@ form.onsubmit = function (e) {
 	let email = formData.get('email');
 
 	let nameError = document.getElementById('nameError');
+	let ageError = document.getElementById('ageError');
+	let telephoneError = document.getElementById('telephoneError');
+	let emailError = document.getElementById('emailError');
 
-	// name
+	// Validation
+	// Name
 	if (name.length < 3) {
-		nameError.innerHTML = '3 Characters long';
+		nameError.innerHTML = 'Must be at least 3 characters long';
 	} else {
 		nameError.innerHTML = '';
 	}
 
-	// age
+	// Age
 	if (age < 17) {
+		ageError.innerHTML = 'Must be at least 17 years old';
+	} else {
+		ageError.innerHTML = '';
 	}
+
+	// Tel
+	if (!telephone.startsWith(+62)) {
+		telephoneError.innerHTML = 'Must start with +62';
+	} else if (telephone.length != 14) {
+		telephoneError.innerHTML = 'Length is incorrect';
+	} else {
+		telephoneError.innerHTML = '';
+	}
+
+	// Email
 };
