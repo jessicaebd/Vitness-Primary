@@ -191,6 +191,7 @@ a {
 }
 
 .footer-text {
+	color: var(--unwhite);
 	font-size: 0.9em;
 }
 
@@ -209,12 +210,22 @@ a {
 .footer-links a:hover {
 	color: var(--white);
 }
-
 .footer-social {
+	display: flex;
+	align-items: center;
+}
+
+.footer-social a {
+	margin-right: 0.7em;
 }
 
 .footer-social img {
 	width: 30px;
+	transition: transform 0.15s ease-in-out;
+}
+
+.footer-social img:hover {
+	transform: scale(1.2);
 }
 
 /* Join */
