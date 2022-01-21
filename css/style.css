@@ -28,7 +28,7 @@ body {
 	height: 60px;
 	color: var(--white);
 	background-color: var(--black);
-	box-shadow: 1px 1px 5px rgb(204, 204, 204);
+	/* box-shadow: 1px 1px 5px rgb(204, 204, 204); */
 	padding: 0 3em;
 }
 
@@ -141,6 +141,7 @@ body {
 	text-decoration: none;
 	border: none;
 	font-size: 1.5em;
+	color: var(--unwhite);
 }
 .mini-navbar-item a:hover {
 	border-top: 3px solid var(--red);
@@ -160,6 +161,51 @@ body {
 	margin: 2px 0;
 	border: 1px solid var(--white);
 	background-color: var(--white);
+}
+/* Content */
+.content {
+	padding-top: 60px;
+}
+
+/* Footer */
+.footer {
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.footer-title {
+	font-size: 1.1em;
+	margin-bottom: 0.6em;
+}
+
+.footer-logo {
+	/* text-align: center; */
+}
+
+.footer-logo img {
+	width: 100px;
+}
+
+.footer-text {
+	font-size: 0.9em;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.9em;
+}
+
+.footer-links a {
+	color: var(--unwhite);
+	margin-bottom: 0.5em;
+}
+
+.footer-links a:hover {
+	color: var(--white);
+}
+
+.footer-social {
 }
 
 /* Join */
