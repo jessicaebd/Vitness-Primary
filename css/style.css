@@ -32,8 +32,8 @@ a {
 	height: 60px;
 	color: var(--white);
 	background-color: var(--black);
-	/* box-shadow: 1px 1px 5px rgb(204, 204, 204); */
 	padding: 0 3em;
+	z-index: 999;
 }
 
 .navbar-logo {
@@ -168,7 +168,18 @@ a {
 }
 /* Content */
 .content {
+	height: 100vh;
 	padding-top: 60px;
+	color: var(--white);
+	background: url('/assets/hero1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-title {
+	font-size: 5em;
+	font-weight: bold;
+	margin-bottom: 0.2em;
 }
 
 /* Footer */
@@ -248,7 +259,6 @@ a {
 	height: 100%;
 	width: 100%;
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
 }
 
