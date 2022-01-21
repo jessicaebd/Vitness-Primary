@@ -20,6 +20,10 @@ body {
 	min-height: 2000px;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
 	display: flex;
@@ -199,6 +203,7 @@ body {
 .footer-links a {
 	color: var(--unwhite);
 	margin-bottom: 0.5em;
+	text-decoration: underline;
 }
 
 .footer-links a:hover {
@@ -206,6 +211,10 @@ body {
 }
 
 .footer-social {
+}
+
+.footer-social img {
+	width: 30px;
 }
 
 /* Join */
@@ -240,6 +249,10 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+form a {
+	text-decoration: underline;
 }
 
 .form-title {
