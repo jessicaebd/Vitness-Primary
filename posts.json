@@ -3,12 +3,16 @@
 		{
 			"id": 1,
 			"title": "Post 1",
-			"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium porta mauris, eget maximus orci lobortis non. Donec interdum eu ligula non posuere. Nam in pharetra neque. Nam consectetur enim fringilla mauris pulvinar, sit amet consectetur metus dictum."
+			"date": "January, 3rd 2021",
+			"category": "Health",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium porta mauris, eget maximus orci lobortis non. Donec interdum eu ligula non posuere. Nam in pharetra neque. Nam consectetur enim fringilla mauris pulvinar, sit amet consectetur metus dictum."
 		},
 		{
 			"id": 2,
 			"title": "Post 2",
-			"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium porta mauris, eget maximus orci lobortis non. Donec interdum eu ligula non posuere. Nam in pharetra neque. Nam consectetur enim fringilla mauris pulvinar, sit amet consectetur metus dictum."
+			"date": "January, 4rd 2021",
+			"category": "Weight Training",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium porta mauris, eget maximus orci lobortis non. Donec interdum eu ligula non posuere. Nam in pharetra neque. Nam consectetur enim fringilla mauris pulvinar, sit amet consectetur metus dictum."
 		}
 	]
 }
