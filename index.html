@@ -14,6 +14,14 @@
   <!--CSS-->
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+  <script src="js/toggle.js"></script>
+  <script src="js/slider.js"></script>
 </head>
 
 <body>
@@ -36,7 +44,7 @@
         </div>
         <div class="dropdown">
           <div class="navbar-item">
-            <a href="class.html">Classes <img src="icons/arrow-down.png" width="10px" height="10px"> </a>
+            <a href="class.html">Classes <img src="/assets/icons/" width="10px" height="10px"> </a>
           </div>
           <div class="dropdown-container">
             <div class="dropdown-item">
@@ -99,6 +107,26 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <p class="page-title">Featured Classes</p>
+
+    <div class="slideshow">
+      <!-- <div class="slide active-slide" id="slide-1">
+
+      </div>
+      <div class="slide" id="slide-2">
+      </div> -->
+      <div class="slide">
+        <img src="assets/hero.jpg" class="activee" id="first">
+        <img src="assets/hero1.jpg" class="" id="last">
+      </div>
+
+      <!-- Control button -->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+  </div>
+
 
   <!-- Footer -->
   <div class="footer">
@@ -138,22 +166,22 @@
         <p class="footer-title">Follow us on social media</p>
         <div class="footer-social">
           <a href="">
-            <img src="assets/youtube-icon.png">
+            <img src="assets/icons/youtube-icon.png">
           </a>
           <a href="">
-            <img src="assets/facebook-icon.png">
+            <img src="assets/icons/facebook-icon.png">
           </a>
           <a href="">
-            <img src="assets/instagram-icon.png">
+            <img src="assets/icons/instagram-icon.png">
           </a>
           <a href="">
-            <img src="assets/tiktok-icon.png">
+            <img src="assets/icons/tiktok-icon.png">
           </a>
           <a href="">
-            <img src="assets/twitter-icon.png">
+            <img src="assets/icons/twitter-icon.png">
           </a>
           <a href="">
-            <img src="assets/discord-icon.png">
+            <img src="assets/icons/discord-icon.png">
           </a>
         </div>
         <p class="copyright">Copyright&#169 2021 Vitness Primary.<br> All rights reserved.</p>
@@ -162,7 +190,7 @@
 
   </div>
 
-  <script src="js/toggle.js"></script>
+
 </body>
 
 </html>
