@@ -2,7 +2,7 @@
 
 :root {
 	--black: rgb(5, 16, 29);
-	--red: rgb(236, 54, 66);
+	--red: rgb(189, 0, 0);
 	--grey: rgb(33, 28, 28);
 	--white: rgb(255, 255, 255);
 	--unwhite: rgb(201, 201, 201);
@@ -240,40 +240,52 @@ img.activee {
 /* Class */
 .classes {
 	padding-top: 100px;
-	min-height: 400px;
 	/* background-color: var(--red); */
 }
 
 .class-card {
 	min-height: 290px;
-	color: var(--black);
-	background-color: var(--unwhite);
-	border-radius: 5px;
+	color: var(--white);
+	background-color: rgb(39, 38, 44);
+	border-radius: 10px;
+	box-shadow: 0 1px 5px rgb(92, 92, 92);
 	transition: 0.15s ease-in-out;
+	cursor: pointer;
 }
 
 .class-card:hover {
-	transform: scale(1.05);
+	box-shadow: 0 1px 5px var(--red);
 }
 
-.class-img {
-	border-radius: 5px;
-	background-color: antiquewhite;
+.class-card:hover {
+	transform: scale(1.02);
+}
+
+.class-card-img {
 	height: 200px;
 }
 
-.class-desc {
+.class-card-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.class-card-desc {
 	padding: 1em;
 }
 
-.class-name {
+.class-card-name {
 	font-size: 1.2em;
-	font-weight: bold;
 	margin-bottom: 1em;
 }
 
-.class-duration {
-	font-size: 0.9em;
+.class-card-duration {
+	font-size: 0.8em;
+	padding: 0 5px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: var(--red);
 }
 
 .page-title {
