@@ -13,6 +13,13 @@
 			"date": "January, 4rd 2021",
 			"category": "Weight Training",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium porta mauris, eget maximus orci lobortis non. Donec interdum eu ligula non posuere. Nam in pharetra neque. Nam consectetur enim fringilla mauris pulvinar, sit amet consectetur metus dictum."
+		},
+		{
+			"id": 3,
+			"title": "Post 2",
+			"date": "January, 4rd 2021",
+			"category": "Weight Training",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium porta mauris, eget maximus orci lobortis non. Donec interdum eu ligula non posuere. Nam in pharetra neque. Nam consectetur enim fringilla mauris pulvinar, sit amet consectetur metus dictum."
 		}
 	]
 }

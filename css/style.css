@@ -137,6 +137,7 @@ a {
 	height: 100vh;
 	background-color: var(--black);
 	top: 60px;
+	z-index: 99;
 }
 
 .mini-navbar-item {
@@ -174,9 +175,9 @@ a {
 	height: 100vh;
 	padding-top: 60px;
 	color: var(--white);
-	/* background: url('/assets/hero1.jpg'); */
-	/* background-size: cover; */
-	/* background-position: center; */
+	background: url('/assets/hero1.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .hero-title {
@@ -200,7 +201,7 @@ a {
 .slideshow img {
 	display: none;
 	width: 100%;
-	height: 550px;
+	height: 100%;
 }
 
 img.activee {
@@ -236,6 +237,20 @@ img.activee {
 .next {
 	right: 0;
 }
+
+/* .dots {
+	height: 100px;
+	text-align: center;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: var(--unwhite);
+} */
 
 /* Class */
 .classes {
@@ -303,6 +318,7 @@ img.activee {
 	background-color: var(--unwhite);
 	margin-bottom: 1em;
 	padding: 2em;
+	cursor: pointer;
 }
 
 .blog-title {
@@ -535,5 +551,14 @@ form a:hover {
 
 	.card {
 		margin-left: 0;
+	}
+
+	.slideshow {
+		height: 300px;
+	}
+
+	.prev,
+	.next {
+		padding: 130px 1em;
 	}
 }

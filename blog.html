@@ -74,13 +74,13 @@
   <!-- Mini Navbar -->
   <div id="miniNavbar">
     <div class="mini-navbar-item">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
     </div>
     <div class="mini-navbar-item">
       <a href="class.html">Classes</a>
     </div>
     <div class="mini-navbar-item">
-      <a href="blog.html">Blog</a>
+      <a href="blog.html" class="active">Blog</a>
     </div>
     <div class="mini-navbar-item">
       <a href="join.html">Join</a>
@@ -91,11 +91,12 @@
   <div class="blog">
     <div class="container">
       <p class="page-title">Blog</p>
-      <div class="blog-card">
+      <div class="blog-card" onclick="blogDetail(1)">
         <p class="blog-title">Why Indonesians Eat Rice?</p>
         <p class="blog-date">January, </p>
 
       </div>
+
       <div class="blog-card">
 
 
@@ -166,6 +167,11 @@
   </div>
 
   <script src="js/toggle.js"></script>
+  <script>
+    function blogDetail(i) {
+      window.location.href = 'blog.html?id=' + i;
+    }
+  </script>
 </body>
 
 </html>
