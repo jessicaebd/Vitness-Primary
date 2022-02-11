@@ -1,52 +1,11 @@
 $(document).ready(function () {
-	// OTOMATIS SLIDER
-	// setInterval(function () {
-	// 	let currentSlide = $('.activee');
-	// 	let nextSlide = currentSlide.next();
-	// 	if (nextSlide.length) {
-	// 		currentSlide.removeClass('activee');
-	// 		nextSlide.addClass('activee');
-	// 	} else {
-	// 		currentSlide.removeClass('activee');
-	// 		$('#first').addClass('activee');
-	// 	}
-	// }, 5000);
-
-	// $('.next').on('click', function () {
-	// 	let currentSlide = $('.activee');
-	// 	let nextSlide = currentSlide.next();
-
-	// 	if (nextSlide.length) {
-	// 		currentSlide.removeClass('activee');
-	// 		nextSlide.addClass('activee');
-	// 	} else {
-	// 		currentSlide.removeClass('activee');
-	// 		$('#slide-1').addClass('activee');
-	// 	}
-	// });
-
-	// // PANAH KIRI
-	// $('.prev').on('click', function () {
-	// 	let currentSlide = $('.activee');
-	// 	let prevSlide = currentSlide.prev();
-
-	// 	if (prevSlide.length) {
-	// 		currentSlide.removeClass('activee');
-	// 		prevSlide.addClass('activee');
-	// 	} else {
-	// 		currentSlide.removeClass('activee');
-	// 		$('#slide-2').addClass('activee');
-	// 	}
-	// });
-
 	let slides = $('.slides');
-	let dot = $('.dot');
 	let slideCount = 3;
 	let currentSlide = 0;
+	let dot = $('.dot');
 
 	slides.hide();
 	slides.eq(currentSlide).show();
-
 	dot.eq(currentSlide).addClass('dot-active');
 
 	// Slide Otomatis
