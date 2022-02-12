@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	let slides = $('.slides');
-	let slideCount = 3;
+	let slideCount = 4;
 	let currentSlide = 0;
 	let dot = $('.dot');
 
