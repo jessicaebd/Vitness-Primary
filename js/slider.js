@@ -19,7 +19,7 @@ $(document).ready(function () {
 		}
 		slides.eq(currentSlide).show();
 		dot.eq(currentSlide).addClass('dot-active');
-	}, 5000);
+	}, 10000);
 
 	// Kontrol Slide
 	$('#leftBtn').click(function () {
