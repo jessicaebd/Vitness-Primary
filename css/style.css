@@ -26,6 +26,16 @@ a {
 	text-decoration: none;
 }
 
+/* Screensaver */
+canvas {
+	position: absolute;
+	/* width: 100%; */
+	/* height: 100%; */
+	z-index: 99;
+	background-color: var(--black);
+	display: none;
+}
+
 /* Navbar */
 .navbar {
 	display: flex;
@@ -35,7 +45,7 @@ a {
 	color: var(--white);
 	background-color: var(--black);
 	padding: 0 3em;
-	z-index: 999;
+	z-index: 98;
 }
 
 .navbar-logo {
@@ -137,7 +147,7 @@ a {
 	height: 100vh;
 	background-color: var(--black);
 	top: 60px;
-	z-index: 99;
+	z-index: 98;
 }
 
 .mini-navbar-item {
