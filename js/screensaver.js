@@ -35,8 +35,13 @@ function screensaver() {
 }
 
 let counter;
-window.addEventListener('mousemove', function (e) {
+
+let hideScreen = function (e) {
 	$('canvas').hide();
+	document.body.style.overflow = 'auto';
 	this.clearTimeout(counter);
-	myTimeout = setTimeout(screensaver, 3000);
-});
+	myTimeout = setTimeout(screensaver, 10000);
+};
+
+window.addEventListener('mousemove', hideScreen);
+window.addEventListener('click', hideScreen);
