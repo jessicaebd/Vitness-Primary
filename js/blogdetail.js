@@ -21,11 +21,10 @@ $(document).ready(function () {
 		$.each(blogs, function (i, blog) {
 			if (blog.id != blog_id) {
 				$('.side-panel').append(`
-          <br>
           <a href="blog-detail.html?id=${blog.id}">
             <p>${blog.title}</p>
-          </a><br>
-          <hr>
+          </a>
+          <hr size="1">
       `);
 			}
 		});
