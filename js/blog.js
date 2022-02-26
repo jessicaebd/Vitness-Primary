@@ -1,13 +1,12 @@
 $(document).ready(function () {
-	let blogFeaturedContainer = $('#blogFeaturedContainer');
 	let blogContainer = $('#blogContainer');
 	$.getJSON('posts.json', function (data) {
 		let blog = data;
 		$.each(blog, function (i, blog) {
 			if (i == 0) {
-				blogFeaturedContainer.append(`
+				$('.featured-blog').append(`
         <a href="blog-detail.html?id=${blog.id}">
-          <div class="col-12" style="background-image: url('${blog.image}'); height: 100%; widht: 100%; background-size: cover">
+          <div class="col-md-12 blog-card-featured" style="background-image: url('${blog.image}');">
           <p class="blog-title">${blog.title}</p>
           <p class="blog-date">${blog.date}</p>
           </div>

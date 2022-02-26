@@ -332,10 +332,18 @@ canvas {
 	padding-top: 70px;
 }
 
-.blog-card-featured {
+.featured-blog {
 	height: 500px;
-	position: relative;
 	margin-bottom: 3em;
+}
+
+.blog-card-featured {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	padding: 3em;
+	color: var(--black);
+	border-radius: 10px;
 }
 
 .blog-featured {
