@@ -411,7 +411,16 @@ canvas {
 .side-panel a {
 	color: var(--unwhite);
 	text-decoration: underline;
-	text-decoration-color: var(--white);
+	text-decoration-color: var(--unwhite);
+}
+
+.side-panel p {
+	margin: 1em 0;
+	font-size: 1.2em;
+}
+
+.side-panel a:hover {
+	color: var(--white);
 }
 
 /* Footer */
