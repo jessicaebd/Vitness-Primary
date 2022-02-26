@@ -13,7 +13,7 @@ $(document).ready(function () {
 		$('.blog-date').text(blog.date);
 		$('.blog-author').text(blog.author);
 		$('.blog-image').attr('src', blog.image);
-		$('.blog-description').text(blog.description);
+		$('.blog-description').html(blog.description);
 
 		// blogDetailContainer.append(`
 		//   <p class="page-title">${blog.title}</p>
