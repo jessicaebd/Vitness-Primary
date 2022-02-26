@@ -40,7 +40,7 @@ let hideScreen = function (e) {
 	$('canvas').hide();
 	document.body.style.overflow = 'auto';
 	this.clearTimeout(counter);
-	counter = setTimeout(screensaver, 10000);
+	counter = setTimeout(screensaver, 15000);
 };
 
 window.addEventListener('mousemove', hideScreen);

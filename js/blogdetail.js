@@ -8,12 +8,27 @@ $(document).ready(function () {
 		let blogs = data;
 		let blog = data.find(({ id }) => id == blog_id);
 
-		$('.blog-title').text(blog.title);
 		$('.blog-category').text(blog.category);
+		$('.blog-title').text(blog.title);
+
+		// Main panel
 		$('.blog-date').text(blog.date);
-		$('.blog-author').text(blog.author);
+		$('.blog-author').text('by ' + blog.author);
 		$('.blog-image').attr('src', blog.image);
 		$('.blog-description').html(blog.description);
+
+		// Side panel
+		$.each(blogs, function (i, blog) {
+			if (blog.id != blog_id) {
+				$('.side-panel').append(`
+          <br>
+          <a href="blog-detail.html?id=${blog.id}">
+            <p>${blog.title}</p>
+          </a><br>
+          <hr>
+      `);
+			}
+		});
 
 		// blogDetailContainer.append(`
 		//   <p class="page-title">${blog.title}</p>

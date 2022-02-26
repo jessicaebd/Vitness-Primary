@@ -396,7 +396,7 @@ canvas {
 	margin-bottom: 0.5em;
 }
 .blog-detail {
-	/* padding-top: 70px; */
+	padding-top: 140px;
 }
 
 .blog-desc {
@@ -406,6 +406,12 @@ canvas {
 .blog-image {
 	width: 100%;
 	height: 100%;
+}
+
+.side-panel a {
+	color: var(--unwhite);
+	text-decoration: underline;
+	text-decoration-color: var(--white);
 }
 
 /* Footer */
