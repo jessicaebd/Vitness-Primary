@@ -391,8 +391,12 @@ canvas {
 }
 
 /* Blog Detail */
+.blog-title {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
 .blog-detail {
-	padding-top: 70px;
+	/* padding-top: 70px; */
 }
 
 .blog-desc {
