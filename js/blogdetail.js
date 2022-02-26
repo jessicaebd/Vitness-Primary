@@ -8,7 +8,12 @@ $(document).ready(function () {
 		let blogs = data;
 		let blog = data.find(({ id }) => id == blog_id);
 
-		$('.page-title').text = blog.title;
+		$('.blog-title').text(blog.title);
+		$('.blog-category').text(blog.category);
+		$('.blog-date').text(blog.date);
+		$('.blog-author').text(blog.author);
+		$('.blog-image').attr('src', blog.image);
+		$('.blog-description').text(blog.description);
 
 		// blogDetailContainer.append(`
 		//   <p class="page-title">${blog.title}</p>
