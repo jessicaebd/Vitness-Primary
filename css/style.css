@@ -332,11 +332,18 @@ canvas {
 	padding-top: 70px;
 }
 
-.blog-card-featured {
+.featured-blog {
 	height: 500px;
-	position: relative;
-	padding: 3em;
 	margin-bottom: 3em;
+}
+
+.blog-card-featured {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	padding: 3em;
+	color: var(--black);
+	border-radius: 10px;
 }
 
 .blog-featured {
@@ -347,7 +354,6 @@ canvas {
 	text-align: center;
 	padding: 0.7em;
 	border-radius: 5px;
-	background-color: rgba(255, 0, 0, 0.4);
 }
 
 .blog-card {
@@ -438,7 +444,7 @@ canvas {
 .footer {
 	color: var(--unwhite);
 	background-color: var(--black);
-	padding: 1em 0;
+	padding: 5em 0;
 }
 
 .footer-title {
