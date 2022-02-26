@@ -360,7 +360,7 @@ canvas {
 	min-height: 350px;
 	margin-bottom: 1em;
 	color: var(--white);
-	background-color: rgb(39, 38, 44);
+	background-color: rgb(175, 37, 37);
 	border-radius: 10px;
 	box-shadow: 0 1px 5px rgb(92, 92, 92);
 	transition: 0.15s ease-in-out;
@@ -368,7 +368,7 @@ canvas {
 }
 
 .blog-card:hover {
-	box-shadow: 0 1px 5px var(--red);
+	box-shadow: 0 1px 5px var(--white);
 }
 
 .blog-card-image {
