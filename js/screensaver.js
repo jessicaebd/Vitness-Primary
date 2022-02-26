@@ -44,4 +44,3 @@ let hideScreen = function (e) {
 };
 
 window.addEventListener('mousemove', hideScreen);
-window.addEventListener('click', hideScreen);

@@ -18,4 +18,7 @@ $(document).ready(function () {
       <p class="blog-category">${blog.category}</p>
       <p class="blog-desc">${blog.description}</p>`);
 	});
+
+	let searchParam = new URLSearchParams(location.search);
+	let id = searchParam.get('id');
 });
