@@ -12,10 +12,11 @@ $(document).ready(function () {
       <p class="page-title">${blog.title}</p>
       <p class="blog-date">Published on ${blog.date}</p>
       <p class="blog-author">By ${blog.author}</p>  
-      <img src="https://source.unsplash.com/200x150/?study" class="blog-image">
+      <img src="${blog.image}" class="blog-image">
         
-      
-      <p class="blog-category">${blog.category}</p>
+      <br><br>
+      <h2 class="blog-category">${blog.category}</h2>
+	  <br>
       <p class="blog-desc">${blog.description}</p>`);
 	});
 });
