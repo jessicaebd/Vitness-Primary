@@ -523,12 +523,12 @@ canvas {
 }
 
 .card {
-	margin-left: 20rem;
-	padding: 3em 3em;
+	margin-left: 15rem;
+	padding: 5em 3em;
 	background-color: var(--black);
 	box-shadow: 2px 2px 5px var(--grey);
 	color: var(--unwhite);
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 form {
@@ -551,6 +551,17 @@ form a {
 .input-container {
 	width: 100%;
 	margin-bottom: 10px;
+}
+
+.term-container {
+	margin-bottom: 15px;
+}
+
+.center-container-term {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -5px;
 }
 
 .center-container {
@@ -603,7 +614,7 @@ form a:hover {
 
 .errorLabel {
 	color: var(--red);
-	text-shadow: 0px 0px 0px var(--white);
+	text-shadow: 0.5px 0px 0px var(--unwhite);
 	font-size: 0.8em;
 	margin-top: 2px;
 }

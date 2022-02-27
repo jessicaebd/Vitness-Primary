@@ -9,50 +9,103 @@ form.onsubmit = function (e) {
 	let gender = formData.get('gender');
 	let telephone = formData.get('telephone');
 	let email = formData.get('email');
+	let term = formData.get('term');
 
 	let nameError = document.getElementById('nameError');
 	let ageError = document.getElementById('ageError');
 	let genderError = document.getElementById('genderError');
 	let telephoneError = document.getElementById('telephoneError');
 	let emailError = document.getElementById('emailError');
+	let termError = document.getElementById('termError');
 
-	// Validation
+	// Validation Function
 	// Name
-	if (name.length < 3) {
-		nameError.innerHTML = 'Must be at least 3 characters long.';
-	} else {
-		nameError.innerHTML = '';
+	function validateName(){
+		if (name.length < 3) {
+			nameError.innerHTML = 'Must be at least 3 characters long.';
+			return false;
+		} else {
+			nameError.innerHTML = '';
+			return true;
+		}	
 	}
 
 	// Age
-	if (age < 17) {
-		ageError.innerHTML = 'Must be at least 17 years old.';
-	} else {
-		ageError.innerHTML = '';
+	function validateAge(){
+		if (age < 10) {
+			ageError.innerHTML = 'Must be at least 10 years old.';
+			return false;
+		} else {
+			ageError.innerHTML = '';
+			return true;
+		}
 	}
 
 	// Gender
-	if(gender != "Male" && gender != "Female"){
-		genderError.innerHTML = 'Must choose gender.'
-	}else{
-		genderError.innerHTML = '';
+	function validateGender(){
+		if(gender != "Male" && gender != "Female"){
+			genderError.innerHTML = 'Must choose gender.'
+			return false;
+		}else{
+			genderError.innerHTML = '';
+			return true;
+		}
 	}
 
 	// Tel
-	if (!telephone.startsWith('+81')) {
-		telephoneError.innerHTML = 'Must start with +81';
-	} else if (telephone.length != 14) {
-		telephoneError.innerHTML = 'Should be 11 digits long';
-	} else {
-		telephoneError.innerHTML = '';
+	function validateTelephone(){
+		if (!telephone.startsWith('+81')) {
+			telephoneError.innerHTML = 'Must start with +81';
+			return false;
+		} else if (telephone.length != 14) {
+			telephoneError.innerHTML = 'Should be 11 digits long';
+			return false;
+		} else {
+			telephoneError.innerHTML = '';
+			return true;
+		}
 	}
 
 	// Email
-	if (!email.endsWith('.com')) {
-		emailError.innerHTML = 'Must end with .com';
-	} else if (!email.includes('@')) {
-		emailError.innerHTML = 'Must contain @';
-	} else {
-		emailError.innerHTML = '';
+	function validateEmail(){
+		if(!email.endsWith('.com') && !email.includes('@')){
+			emailError.innerHTML = 'Must contain @ and end with .com';
+			return false;
+		}else if (!email.endsWith('.com')) {
+			emailError.innerHTML = 'Must end with .com';
+			return false;
+		} else if (!email.includes('@')) {
+			emailError.innerHTML = 'Must contain @';
+			return false;
+		} else {
+			emailError.innerHTML = '';
+			return true;
+		}
+	}
+
+	// Term
+	function validateTerm(){
+		if(term == null){
+			termError.innerHTML = 'Must agree to terms and conditions.';
+			return false;
+		}else{
+			termError.innerHTML = '';
+			return true;
+		}
+	}
+
+	let nameCheck = validateName();
+	let ageCheck = validateAge();
+	let genderCheck = validateGender();
+	let teleCheck = validateTelephone();
+	let emailCheck = validateEmail();
+	let termCheck = validateTerm();
+
+	//Validation
+	if(nameCheck && ageCheck && genderCheck && teleCheck && emailCheck && termCheck) {
+		alert('Thank you for joining Vitness Primary!')
+		location.href = 'index.html';
 	}
 };
+
+
