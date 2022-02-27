@@ -223,7 +223,7 @@ canvas {
 }
 
 .slider-control:hover {
-	background-color: rgba(197, 24, 24, 0.2);
+	background-color: rgba(90, 12, 12, 0.2);
 	color: var(--black);
 }
 
