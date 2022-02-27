@@ -314,12 +314,20 @@ canvas {
 	margin-bottom: 1em;
 }
 
-.class-card-duration {
+.class-card-capsule-red {
 	font-size: 0.8em;
 	padding: 0 5px;
 	border-radius: 10px;
 	display: inline-block;
 	background-color: var(--red);
+}
+
+.class-card-capsule-black {
+	font-size: 0.8em;
+	padding: 0 5px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: var(--black);
 }
 
 .page-title {

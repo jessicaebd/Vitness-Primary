@@ -8,6 +8,7 @@ $(document).ready(function () {
         <a href="blog-detail.html?id=${blog.id}">
           <div class="col-md-12 blog-card-featured" style="background-image: url('${blog.image}');">
           <p class="blog-title">${blog.title}</p>
+          <p class="blog-category">${blog.category}</p>
           <p class="blog-date">${blog.date}</p>
           </div>
         </a>`);
@@ -19,6 +20,7 @@ $(document).ready(function () {
               <img src="${blog.image}" class="blog-card-image">
               <div class="blog-card-desc">
                 <p class="blog-card-title">${blog.title}</p>
+                <p class="class-card-capsule-black">${blog.category}</p>
                 <p class="blog-card-date">${blog.date}</p>
               </div>
             </div>
