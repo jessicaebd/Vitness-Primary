@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 		// Main panel
 		$('.blog-date').text('Posted on ' + blog.date);
-		$('.blog-author').text('By ' + blog.author);
+		$('.blog-author').html('By ' + '<u>' + blog.author + '</u>');
 		$('.blog-image').attr('src', blog.image);
 		$('.blog-content').html(blog.content);
 
