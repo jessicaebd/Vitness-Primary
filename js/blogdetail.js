@@ -14,6 +14,9 @@ $(document).ready(function () {
 		$('.blog-author').html('By ' + '<u>' + blog.author + '</u>');
 		$('.blog-image').attr('src', blog.image);
 		$('.blog-content').html(blog.content);
+		$('.blog-likes').html(blog.likes);
+		$('.blog-comments').html(blog.comments);
+		$('.blog-views').html(blog.views);
 
 		// Side panel
 		$.each(blogs, function (i, blog) {

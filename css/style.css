@@ -293,6 +293,14 @@ canvas {
 	cursor: pointer;
 }
 
+.featured-classes-card {
+	padding: 1em 1em 1em 1em;
+	background-color: rgba(255, 0, 0, 0.5);
+	border-radius: 20px;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
 .class-card:hover {
 	box-shadow: 0 5px 5px var(--red);
 }
@@ -318,23 +326,16 @@ canvas {
 .class-card-name {
 	font-size: 1.2em;
 	margin-bottom: 1em;
+	text-shadow: 4px 4px 4px var(--black);
 }
 
 .class-card-capsule-red {
 	font-size: 0.9em;
-	padding: 0 5px;
-	border-radius: 10px;
-	display: inline-block;
-	background-color: var(--red);
-}
-
-.class-card-capsule-black {
-	font-size: 0.9em;
-	padding: 0 5px;
+	padding: 2px 5px;
 	margin-bottom: 5px;
 	border-radius: 10px;
 	display: inline-block;
-	background-color: var(--black);
+	background-color: var(--red);
 }
 
 .class-title {
@@ -412,6 +413,7 @@ canvas {
 	font-size: 1.3em;
 	margin: 0.5em 0;
 	font-weight: bold;
+	text-shadow: 2px 2px 2px var(--black);
 }
 
 .blog-card-date {
@@ -429,6 +431,15 @@ canvas {
 	justify-content: space-between;
 }
 
+.blog-card-capsule-black {
+	font-size: 0.9em;
+	padding: 2px 5px;
+	margin-bottom: 2px;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: var(--black);
+}
+
 /* Blog Detail */
 .blog-detail {
 	padding-top: 80px;
@@ -441,6 +452,7 @@ canvas {
 .blog-category {
 	font-size: 1.1em;
 	padding: 5px 20px;
+	margin-bottom: 0.5em;
 	border-radius: 50px;
 	display: inline-block;
 	background-color: var(--red);
@@ -455,8 +467,17 @@ canvas {
 .blog-author {
 	font-size: 0.9em;
 	margin-bottom: 0.5em;
-	/* text-decoration: underline; */
 	cursor: pointer;
+	display: inline-block;
+}
+
+.blog-likes,
+.blog-comments,
+.blog-views {
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	margin-right: 0.5rem;
+	margin-left: 0.2rem;
 	display: inline-block;
 }
 

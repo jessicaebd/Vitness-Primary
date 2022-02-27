@@ -19,8 +19,7 @@ $(document).ready(function () {
             <div class="blog-card">
               <img src="${blog.image}" class="blog-card-image">
               <div class="blog-card-text">
-                
-                <p class="class-card-capsule-black">${blog.category}</p>
+                <p class="blog-card-capsule-black">${blog.category}</p>
                 <p class="blog-card-date">${blog.date}</p>
                 <p class="blog-card-title">${blog.title}</p>
                 <p class="blog-card-description">${blog.description}</p>
