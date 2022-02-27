@@ -12,6 +12,7 @@ form.onsubmit = function (e) {
 
 	let nameError = document.getElementById('nameError');
 	let ageError = document.getElementById('ageError');
+	let genderError = document.getElementById('genderError');
 	let telephoneError = document.getElementById('telephoneError');
 	let emailError = document.getElementById('emailError');
 
@@ -28,6 +29,13 @@ form.onsubmit = function (e) {
 		ageError.innerHTML = 'Must be at least 17 years old.';
 	} else {
 		ageError.innerHTML = '';
+	}
+
+	// Gender
+	if(gender != "Male" && gender != "Female"){
+		genderError.innerHTML = 'Must choose gender.'
+	}else{
+		genderError.innerHTML = '';
 	}
 
 	// Tel
