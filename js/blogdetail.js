@@ -13,7 +13,7 @@ $(document).ready(function () {
 		$('.blog-date').text('Posted on ' + blog.date);
 		$('.blog-author').text('By ' + blog.author);
 		$('.blog-image').attr('src', blog.image);
-		$('.blog-description').html(blog.description);
+		$('.blog-content').html(blog.content);
 
 		// Side panel
 		$.each(blogs, function (i, blog) {
