@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&display=swap');
 
 :root {
 	--black: rgb(5, 16, 29);
@@ -183,7 +183,7 @@ canvas {
 	height: 100vh;
 	padding-top: 60px;
 	color: var(--white);
-	background: url("/assets/home.jpg");
+	background: url('/assets/home.jpg');
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 3em;
@@ -277,6 +277,11 @@ canvas {
 	padding-top: 70px;
 }
 
+[id*='class-type-'] {
+	margin-top: -100px;
+	padding-top: 100px;
+}
+
 .class-card {
 	min-height: 290px;
 	color: var(--white);
@@ -288,7 +293,7 @@ canvas {
 }
 
 .class-card:hover {
-	box-shadow: 0 1px 5px var(--red);
+	box-shadow: 0 5px 5px var(--red);
 }
 
 .class-card:hover {
@@ -315,7 +320,7 @@ canvas {
 }
 
 .class-card-capsule-red {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	padding: 0 5px;
 	border-radius: 10px;
 	display: inline-block;
@@ -323,7 +328,7 @@ canvas {
 }
 
 .class-card-capsule-black {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	padding: 0 5px;
 	border-radius: 10px;
 	display: inline-block;
@@ -331,7 +336,7 @@ canvas {
 }
 
 .class-title {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin-bottom: 0.5em;
 	font-weight: bold;
 	text-shadow: 2px 2px 0px var(--red);
@@ -341,6 +346,8 @@ canvas {
 	font-size: 2em;
 	margin-bottom: 0.5em;
 	text-align: center;
+	font-weight: bold;
+	text-shadow: 2px 2px 0px var(--red);
 }
 
 /* Blog */
@@ -413,26 +420,28 @@ canvas {
 }
 
 /* Blog Detail */
+.blog-detail {
+	padding-top: 80px;
+}
+
 .blog-category {
-	font-size: 1.2em;
-	padding: 5px 15px;
+	font-size: 1.1em;
+	padding: 5px 20px;
 	border-radius: 50px;
 	display: inline-block;
-	margin-bottom: 1em;
 	background-color: var(--red);
 }
 .blog-title {
 	font-size: 2.5em;
 	margin-bottom: 0.5em;
 	font-weight: bold;
-}
-.blog-detail {
-	padding-top: 100px;
+	text-shadow: 2px 2px 0px var(--red);
 }
 
 .blog-content {
 	margin-top: 2em;
 	text-align: justify;
+	color: var(--unwhite);
 }
 
 .blog-image {
@@ -453,7 +462,7 @@ canvas {
 }
 
 .side-panel a:hover {
-	color: var(--white);
+	text-decoration-thickness: 4px;
 }
 
 /* Footer */
@@ -464,9 +473,10 @@ canvas {
 }
 
 .footer-title {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	margin-bottom: 0.6em;
 	color: var(--white);
+	text-shadow: 2px 2px 0px var(--red);
 }
 
 .footer-logo {
@@ -523,7 +533,7 @@ canvas {
 .register {
 	width: 100%;
 	height: 100vh;
-	background: url("../assets/join.jpg");
+	background: url('../assets/join.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -586,10 +596,10 @@ form a {
 	margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="tel"],
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
 select {
 	width: 100%;
 	padding: 10px;
