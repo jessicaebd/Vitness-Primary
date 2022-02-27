@@ -327,12 +327,13 @@ canvas {
 	font-size: 1.2em;
 	margin-bottom: 1em;
 	text-shadow: 4px 4px 4px var(--black);
+	font-weight: bold;
 }
 
 .class-card-capsule-red {
 	font-size: 0.9em;
 	padding: 2px 5px;
-	margin-bottom: 5px;
+	margin-bottom: 1em;
 	border-radius: 10px;
 	display: inline-block;
 	background-color: var(--red);
@@ -679,7 +680,9 @@ select {
 
 .btn-register:hover {
 	border-radius: 7px;
-	background-color: rgb(179, 0, 0);
+	background-color: rgb(153, 6, 6);
+	padding: 12px 27px;
+	font-size: 1.1em;
 }
 
 form a {
