@@ -23,7 +23,7 @@ $(document).ready(function () {
                 <p class="class-card-capsule-black">${blog.category}</p>
                 <p class="blog-card-date">${blog.date}</p>
                 <p class="blog-card-title">${blog.title}</p>
-                <p class="blog-card-description">"${blog.description}"</p>
+                <p class="blog-card-description">${blog.description}</p>
               </div>
             </div>
           </a>
