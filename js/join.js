@@ -20,18 +20,18 @@ form.onsubmit = function (e) {
 
 	// Validation Function
 	// Name
-	function validateName(){
+	function validateName() {
 		if (name.length < 3) {
 			nameError.innerHTML = 'Must be at least 3 characters long.';
 			return false;
 		} else {
 			nameError.innerHTML = '';
 			return true;
-		}	
+		}
 	}
 
 	// Age
-	function validateAge(){
+	function validateAge() {
 		if (age < 10) {
 			ageError.innerHTML = 'Must be at least 10 years old.';
 			return false;
@@ -42,18 +42,18 @@ form.onsubmit = function (e) {
 	}
 
 	// Gender
-	function validateGender(){
-		if(gender != "Male" && gender != "Female"){
-			genderError.innerHTML = 'Must choose gender.'
+	function validateGender() {
+		if (gender != 'Male' && gender != 'Female') {
+			genderError.innerHTML = 'Must choose gender.';
 			return false;
-		}else{
+		} else {
 			genderError.innerHTML = '';
 			return true;
 		}
 	}
 
 	// Tel
-	function validateTelephone(){
+	function validateTelephone() {
 		if (!telephone.startsWith('+81')) {
 			telephoneError.innerHTML = 'Must start with +81';
 			return false;
@@ -67,11 +67,11 @@ form.onsubmit = function (e) {
 	}
 
 	// Email
-	function validateEmail(){
-		if(!email.endsWith('.com') && !email.includes('@')){
+	function validateEmail() {
+		if (!email.endsWith('.com') && !email.includes('@')) {
 			emailError.innerHTML = 'Must contain @ and end with .com';
 			return false;
-		}else if (!email.endsWith('.com')) {
+		} else if (!email.endsWith('.com')) {
 			emailError.innerHTML = 'Must end with .com';
 			return false;
 		} else if (!email.includes('@')) {
@@ -84,11 +84,11 @@ form.onsubmit = function (e) {
 	}
 
 	// Term
-	function validateTerm(){
-		if(term == null){
+	function validateTerm() {
+		if (term == null) {
 			termError.innerHTML = 'Must agree to terms and conditions.';
 			return false;
-		}else{
+		} else {
 			termError.innerHTML = '';
 			return true;
 		}
@@ -102,10 +102,8 @@ form.onsubmit = function (e) {
 	let termCheck = validateTerm();
 
 	//Validation
-	if(nameCheck && ageCheck && genderCheck && teleCheck && emailCheck && termCheck) {
-		alert('Thank you for joining Vitness Primary!')
+	if (nameCheck && ageCheck && genderCheck && teleCheck && emailCheck && termCheck) {
+		alert('Thank you for joining Vitness Primary!');
 		location.href = 'index.html';
 	}
 };
-
-
